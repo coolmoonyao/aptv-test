@@ -1,7 +1,31 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播1",东方卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://bp-resource-dfl.bestv.cn/151/3/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/QVC.png" group-title="🇯🇵日本直播",QVC
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://d1flvb4iqlercm.cloudfront.net/r-channel/live.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/MBC%20Chuncheon%20(%EC%B6%98%EC%B2%9C%20MBC)%20(480p)%20%5BNot%2024%2F7%5D.png" group-title="🇰🇷韩国直播",MBC Chuncheon (춘천 MBC) (480p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/MBC%20Yeosu%20(%EC%97%AC%EC%88%98%20MBC)%5BNot%2024%2F7%5D.png" group-title="🇰🇷韩国直播",MBC Yeosu (여수 MBC)[Not 24/7]
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CBS%202%20New%20York.png" group-title="🇺🇸美国直播",CBS 2 New York
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://stream.cammonitorplus.net/1810/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN1.png" group-title="🇺🇸美国直播",CGTN1
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://live-stream.cgtn.com/event-live/CGTN_1_1PVvR6ZBAZ2/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/USA%20Network.png" group-title="🇺🇸美国直播",USA Network
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://190.11.225.124:5000/live/usa_hd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/6.png" group-title="💎地方台直播",6
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/LQTV.png" group-title="💎地方台直播",LQTV
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/SYTV.png" group-title="💎地方台直播",SYTV
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8
@@ -11,9 +35,16 @@ https://srs.iybtv.cn/video/YBTV11/index.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/YBTV-2.png" group-title="💎地方台直播",YBTV-2
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://srs.iybtv.cn/video/YBTV21/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%8A%E6%B5%B7%E6%96%B0%E7%BA%AA%E5%AE%9E.png" group-title="💎地方台直播",上海新纪实
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B9%8B%E6%B1%9F%E8%AE%B0%E5%BD%95.png" group-title="💎地方台直播",之江记录
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%9B%BD%E9%83%BD%E5%B8%824K.png" group-title="💎地方台直播",南国都市4K
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%90%89%E6%9E%97%E7%BA%AA%E5%BD%95%E7%89%87%E8%BD%AE%E6%92%AD.png" group-title="💎地方台直播",吉林纪录片轮播
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 #EXTVLCOPT:http-referrer=https://live.445569.xyz/
@@ -31,12 +62,27 @@ https://tvfile.lasatv.cn/nmip-media/channellive/channel104335/playlist.m3u8
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 #EXTVLCOPT:http-referrer=https://live.445569.xyz/
 https://event.pull.hebtv.com:443/live/live101.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%88%B1%E4%B8%8A%E6%B5%B7.png" group-title="💎地方台直播",爱上海
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://bp-resource-dfl.bestv.cn/152/3/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%9C%8B%E4%B8%9C%E6%96%B94K.png" group-title="💎地方台直播",看东方4K
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%92%B1%E6%B1%9F.png" group-title="💎地方台直播",钱江
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%9D%92%E7%94%B0%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",青田电视台
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGN%E4%B8%AD%E6%96%87%E5%8F%B0.png" group-title="🔮港澳台直播",CGN中文台
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/PTSxs.png" group-title="🔮港澳台直播",PTSxs
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://220.135.241.47:8312/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBS%20Asia.png" group-title="🔮港澳台直播",TVBS Asia
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBS%E6%96%B0%E9%97%BB.png" group-title="🔮港澳台直播",TVBS新闻
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://jnzq.ohoyee.com:9080/live/332332-tvbsxw.m3u8
@@ -56,9 +102,9 @@ http://220.135.241.47:8321/0.ts
 http://220.135.241.47:8322/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%85%AC%E8%A6%96.png" group-title="🔮港澳台直播",公視
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://220.135.241.47:8305/0.ts
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://211.72.174.95:8116/0.ts
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://220.135.241.47:8305/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%85%AC%E8%A6%96%E5%8F%B0%E8%AA%9E%E5%8F%B0.png" group-title="🔮港澳台直播",公視台語台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://220.135.241.47:8306/0.ts
