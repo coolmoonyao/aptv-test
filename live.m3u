@@ -1,1 +1,11 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/LQTV.png" group-title="💎地方台直播",LQTV
+http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/SYTV.png" group-title="💎地方台直播",SYTV
+http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%8A%E6%B5%B7%E6%96%B0%E7%BA%AA%E5%AE%9E.png" group-title="💎地方台直播",上海新纪实
+http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBS%E6%96%B0%E9%97%BB.png" group-title="🔮港澳台直播",TVBS新闻
+http://jnzq.ohoyee.com:9080/live/332332-tvbsxw.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%AF%B0%E5%AE%87%E6%96%B0%E9%97%BB.png" group-title="🔮港澳台直播",寰宇新闻
+http://jnzq.ohoyee.com:9080/live/332332-hyxw.m3u8
