@@ -1,4 +1,9 @@
-"""过滤、同名合并排序、M3U 生成。"""
+"""过滤、同名合并排序、M3U 生成。
+
+探测结果从 3 元组 (w, h, ms) 扩展为 5 元组 (w, h, ms, ua, referer)，
+命中头随 URL 一并透传，供最终 m3u 写入 #EXTVLCOPT 头（VLC 系播放器
+会据此用正确的 UA/Referer 请求，从而解锁只认特定客户端的源）。
+"""
 
 
 def filter_by_keywords(entries: list[dict], cfg: dict) -> list[dict]:
@@ -16,9 +21,9 @@ def filter_by_keywords(entries: list[dict], cfg: dict) -> list[dict]:
 
 
 def apply_probe_filters(
-    results: list[tuple[dict, tuple[int, int, float] | None]], cfg: dict
+    results: list[tuple[dict, tuple[int, int, float, str, str] | None]], cfg: dict
 ) -> list[dict]:
-    """按分辨率与响应时间筛选，给通过的条目附加 width/height/response_ms。"""
+    """按分辨率与响应时间筛选，给通过的条目附加 width/height/response_ms/ua/referer。"""
     min_w = cfg.get("min_width", 1920)
     min_h = cfg.get("min_height", 1080)
     max_ms = cfg.get("max_response_ms", 1000)
@@ -26,14 +31,24 @@ def apply_probe_filters(
     for e, res in results:
         if res is None:
             continue
-        w, h, ms = res
+        w, h, ms, ua, ref = res
         if w >= min_w and h >= min_h and ms <= max_ms:
-            out.append({**e, "width": w, "height": h, "response_ms": ms})
+            out.append({
+                **e,
+                "width": w,
+                "height": h,
+                "response_ms": ms,
+                "ua": ua,
+                "referer": ref,
+            })
     return out
 
 
 def merge_and_sort(entries: list[dict]) -> list[dict]:
-    """同名节目合并为多链接；分辨率降序，同分辨率按响应时间升序。"""
+    """同名节目合并为多链接；分辨率降序，同分辨率按响应时间升序。
+
+    每个链接保留自己的命中头 (ua, referer)，供按 URL 写 EXTVLCOPT。
+    """
     groups: dict[str, list[dict]] = {}
     for e in entries:
         groups.setdefault(e["name"], []).append(e)
@@ -47,14 +62,26 @@ def merge_and_sort(entries: list[dict]) -> list[dict]:
             "name": name,
             "group": best["group"],
             "logo": best["logo"],
-            "urls": [it["url"] for it in items],
+            "urls": [
+                {
+                    "url": it["url"],
+                    "ua": it.get("ua", ""),
+                    "referer": it.get("referer", ""),
+                }
+                for it in items
+            ],
         })
     merged.sort(key=lambda m: (m["group"], m["name"]))
     return merged
 
 
-def generate_m3u(merged: list[dict]) -> str:
-    """生成 M3U 文本：一个 #EXTINF 名称 + 多行 URL（备用源）。"""
+def generate_m3u(merged: list[dict], embed_extvlcopt: bool = True) -> str:
+    """生成 M3U 文本：一个 #EXTINF 名称 + 多行 URL（备用源）。
+
+    embed_extvlcopt 为 True 时，为每个带命中头的 URL 前插入
+    #EXTVLCOPT:http-user-agent / #EXTVLCOPT:http-referrer，
+    VLC 及多数 IPTV 播放器会按此头发起请求。
+    """
     lines = ["#EXTM3U"]
     for m in merged:
         attrs = []
@@ -65,5 +92,9 @@ def generate_m3u(merged: list[dict]) -> str:
         attr_str = " ".join(attrs)
         lines.append(f"#EXTINF:-1 {attr_str},{m['name']}".replace("  ", " "))
         for u in m["urls"]:
-            lines.append(u)
+            if embed_extvlcopt and u.get("ua"):
+                lines.append(f'#EXTVLCOPT:http-user-agent={u["ua"]}')
+            if embed_extvlcopt and u.get("referer"):
+                lines.append(f'#EXTVLCOPT:http-referrer={u["referer"]}')
+            lines.append(u["url"])
     return "\n".join(lines) + "\n"

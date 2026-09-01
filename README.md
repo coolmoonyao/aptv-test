@@ -59,6 +59,10 @@ python api.py        # 默认 0.0.0.0:8000
 ## 配置（config.json）
 
 - `sources`：直播源地址数组，支持**多个地址**。
+- `user_agents`：候选 User-Agent 列表，抓取与探测阶段逐个轮询（排前面的优先）。不少源只认特定客户端 UA，如 `okHttp/Mod-1.5.0.0`。
+- `referers`：候选 Referer 列表，`""` 表示不设 Referer。抓取阶段还会自动追加源站自身首页作为候选。
+- `embed_extvlcopt`：是否在 `live.m3u` 中为每个流写入 `#EXTVLCOPT:http-user-agent / http-referrer`（VLC 系播放器按此头请求，解锁只认特定客户端的源）。
+- `hit_headers_cache`：命中组合缓存文件名，记录每个流命中的 `(ua, referer)`，跨次运行复用。
 - `include_keywords` / `exclude_keywords`：关键词数组，支持**多个关键词**，对「分组 + 名称」做包含/排除匹配。
 - `min_width` / `min_height`：最低分辨率（默认 1920×1080）。
 - `max_response_ms`：最大响应时间（默认 1000ms）。

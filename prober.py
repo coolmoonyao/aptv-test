@@ -2,6 +2,11 @@
 
 「响应时间」定义为 HTTP 首字节耗时（连接 + 响应头 + 首个数据字节），
 而非 ffprobe 起播耗时——后者需下载视频分片，必然 >1s，会误杀好源。
+
+支持「多 User-Agent × 多 Referer」轮询：不少源对请求头做白名单校验，
+只有特定客户端 UA（如 okHttp/Mod-1.5.0.0）或特定 Referer 才放行。
+对每个流依次尝试候选组合，记录命中的 (ua, referer)，供下次优先复用
+并写入最终 m3u 的 #EXTVLCOPT 头。
 """
 import asyncio
 import shutil
@@ -17,19 +22,15 @@ FFPROBE = (
     or "/opt/homebrew/bin/ffprobe"
 )
 
-UA = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-)
-# 多数源要求携带 Referer，否则返回 403/空流
-REFERER = "https://live.445569.xyz/"
 
-
-def _ffprobe_cmd(url: str) -> list[str]:
-    return [
+def _ffprobe_cmd(url: str, ua: str, referer: str) -> list[str]:
+    cmd = [
         FFPROBE, "-v", "error",
-        "-user_agent", UA,
-        "-headers", f"Referer: {REFERER}\r\n",
+        "-user_agent", ua,
+    ]
+    if referer:
+        cmd += ["-headers", f"Referer: {referer}\r\n"]
+    cmd += [
         "-select_streams", "v:0",
         "-show_entries", "stream=width,height",
         "-of", "default=noprint_wrappers=1:nokey=1",
@@ -38,24 +39,59 @@ def _ffprobe_cmd(url: str) -> list[str]:
         "-rw_timeout", "8000000",
         url,
     ]
+    return cmd
 
 
-async def _http_first_byte(client: httpx.AsyncClient, url: str) -> tuple[bool, float]:
-    """返回 (是否 2xx/3xx, 首字节响应毫秒)。失败返回 (False, 0)。"""
+def _ordered_combos(
+    user_agents: list[str], referers: list[str], preferred: list | None
+) -> list[tuple[str, str]]:
+    """生成 UA×Referer 组合，把上次命中的 preferred 提到最前。"""
+    combos: list[tuple[str, str]] = []
+    for ua in user_agents:
+        for ref in referers:
+            combos.append((ua, ref))
+    if preferred and len(preferred) == 2:
+        p = (preferred[0], preferred[1])
+        if p in combos:
+            combos.remove(p)
+            combos.insert(0, p)
+    return combos
+
+
+async def _http_first_byte(
+    client: httpx.AsyncClient, url: str, ua: str, referer: str
+) -> tuple[bool, float, int | None]:
+    """门禁探测：返回 (是否 2xx/3xx, 首字节毫秒, 状态码)。
+
+    - 2xx/3xx           → (True, ms, status)，过门禁
+    - 明确 4xx/5xx      → (False, 0, status)，防盗链拒绝，可换组合重试
+    - 网络错误/超时     → (False, 0, None)，死链，无需再试其他组合
+
+    门禁探测要快：单组合 connect 3s / 整体 5s 上限，避免死链把总时长拖爆。
+    """
+    headers = {"User-Agent": ua}
+    if referer:
+        headers["Referer"] = referer
     t0 = time.perf_counter()
     try:
-        async with client.stream("GET", url) as resp:
+        async with client.stream(
+            "GET", url, headers=headers, timeout=httpx.Timeout(5.0, connect=3.0)
+        ) as resp:
             async for _ in resp.aiter_bytes(1):
                 break
             ms = (time.perf_counter() - t0) * 1000.0
-            return (200 <= resp.status_code < 400), ms
+            if 200 <= resp.status_code < 400:
+                return True, ms, resp.status_code
+            return False, 0.0, resp.status_code
     except Exception:  # noqa: BLE001
-        return False, 0.0
+        return False, 0.0, None
 
 
-async def _probe_resolution(url: str, timeout_s: float) -> tuple[int, int] | None:
+async def _probe_resolution(
+    url: str, timeout_s: float, ua: str, referer: str
+) -> tuple[int, int] | None:
     """ffprobe 取 (width, height)，失败返回 None。"""
-    cmd = _ffprobe_cmd(url)
+    cmd = _ffprobe_cmd(url, ua, referer)
     try:
         proc = await asyncio.create_subprocess_exec(
             *cmd,
@@ -83,38 +119,65 @@ async def _probe_resolution(url: str, timeout_s: float) -> tuple[int, int] | Non
 
 
 async def probe_one(
-    client: httpx.AsyncClient, url: str, timeout_s: float
-) -> tuple[int, int, float] | None:
-    """返回 (width, height, response_ms)，失败返回 None。"""
-    ok, ms = await _http_first_byte(client, url)
-    if not ok:
-        return None
-    wh = await _probe_resolution(url, timeout_s)
-    if wh is None:
-        return None
-    return wh[0], wh[1], round(ms)
+    client: httpx.AsyncClient,
+    url: str,
+    timeout_s: float,
+    user_agents: list[str],
+    referers: list[str],
+    preferred: list | None = None,
+) -> tuple[int, int, float, str, str] | None:
+    """返回 (width, height, response_ms, ua, referer)，失败返回 None。
+
+    依次尝试候选 UA×Referer，命中即停：
+    - 2xx/3xx + ffprobe 解析成功 → 返回结果（命中组合）
+    - 2xx 但 ffprobe 失败 → 「软 2xx」（200 返回错误页/空流），换组合再试
+    - 明确 4xx/5xx → 防盗链拒绝，换组合再试
+    - 网络错误/超时 → 死链，直接放弃（换 UA 也救不回来，避免拖慢整体）
+    """
+    for ua, ref in _ordered_combos(user_agents, referers, preferred):
+        ok, ms, status = await _http_first_byte(client, url, ua, ref)
+        if ok:
+            wh = await _probe_resolution(url, timeout_s, ua, ref)
+            if wh is not None:
+                return wh[0], wh[1], round(ms), ua, ref
+            continue  # 软 2xx：换下一组合
+        if status is None:
+            return None  # 网络错误/超时：死链，不再尝试
+        # 明确 4xx/5xx：防盗链拒绝，继续换下一组合
+    return None
 
 
 async def probe_all(
     entries: list[dict],
     concurrency: int,
     timeout_s: float,
-    cache: dict[str, tuple[int, int, float] | None],
-) -> list[tuple[dict, tuple[int, int, float] | None]]:
-    """并发探测，返回 [(entry, result), ...]，同 URL 走缓存。"""
+    cache: dict[str, tuple[int, int, float, str, str] | None],
+    user_agents: list[str],
+    referers: list[str],
+    hit_headers: dict[str, list[str]],
+) -> list[tuple[dict, tuple[int, int, float, str, str] | None]]:
+    """并发探测，返回 [(entry, result), ...]，同 URL 走缓存。
+
+    hit_headers 记录每个 URL 命中的 [ua, referer]，供跨次运行复用。
+    """
     sem = asyncio.Semaphore(concurrency)
-    headers = {"User-Agent": UA, "Referer": REFERER}
 
     async def worker(e: dict):
         async with sem:
             url = e["url"]
+            preferred = hit_headers.get(url)
             if url not in cache:
-                cache[url] = await probe_one(client, url, timeout_s)
-            return e, cache[url]
+                cache[url] = await probe_one(
+                    client, url, timeout_s, user_agents, referers, preferred
+                )
+            res = cache[url]
+            if res is not None:
+                hit_headers[url] = [res[3], res[4]]
+            return e, res
 
     # verify=False：部分 CDN 证书过期/自签，此处仅读公开流，可接受
     async with httpx.AsyncClient(
-        headers=headers, timeout=12, follow_redirects=True, verify=False
+        timeout=12, follow_redirects=True, verify=False
     ) as client:
         results = await asyncio.gather(*(worker(e) for e in entries))
     return list(results)
