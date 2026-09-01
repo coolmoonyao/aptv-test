@@ -1,57 +1,67 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播1",东方卫视
 http://bp-resource-dfl.bestv.cn/151/3/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播1",宁夏卫视
-https://hls.nxhhy.cn/live/nxws1M.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%BB%B6%E8%BE%B9%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播1",延边卫视
-https://srs.iybtv.cn/video/CYS1/index.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/QVC.png" group-title="🇯🇵日本直播",QVC
-https://d1flvb4iqlercm.cloudfront.net/r-channel/live.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/MBC%20Chuncheon%20(%EC%B6%98%EC%B2%9C%20MBC)%20(480p)%20%5BNot%2024%2F7%5D.png" group-title="🇰🇷韩国直播",MBC Chuncheon (춘천 MBC) (480p) [Not 24/7]
-https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/MBC%20Yeosu%20(%EC%97%AC%EC%88%98%20MBC)%5BNot%2024%2F7%5D.png" group-title="🇰🇷韩国直播",MBC Yeosu (여수 MBC)[Not 24/7]
-https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Bravo%20Vault.png" group-title="🇺🇸美国直播",Bravo Vault
-https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/61a276d1-8291-4018-aba2-146304f96043/4.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CBS%202%20New%20York.png" group-title="🇺🇸美国直播",CBS 2 New York
-http://stream.cammonitorplus.net/1810/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN1.png" group-title="🇺🇸美国直播",CGTN1
-https://live-stream.cgtn.com/event-live/CGTN_1_1PVvR6ZBAZ2/index.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/6.png" group-title="💎地方台直播",6
 http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/LQTV.png" group-title="💎地方台直播",LQTV
-http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/SYTV.png" group-title="💎地方台直播",SYTV
-http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/YBTV-1.png" group-title="💎地方台直播",YBTV-1
 https://srs.iybtv.cn/video/YBTV11/index.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/YBTV-2.png" group-title="💎地方台直播",YBTV-2
 https://srs.iybtv.cn/video/YBTV21/index.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Z%E5%86%9C%E6%9D%91%E9%A2%91%E9%81%93.png" group-title="💎地方台直播",Z农村频道
-http://zbbf2.ahbztv.com/live/418.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%8A%E6%B5%B7%E6%96%B0%E7%BA%AA%E5%AE%9E.png" group-title="💎地方台直播",上海新纪实
 http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B9%8B%E6%B1%9F%E8%AE%B0%E5%BD%95.png" group-title="💎地方台直播",之江记录
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%9B%BD%E9%83%BD%E5%B8%824K.png" group-title="💎地方台直播",南国都市4K
-http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%90%89%E6%9E%97%E7%BA%AA%E5%BD%95%E7%89%87%E8%BD%AE%E6%92%AD.png" group-title="💎地方台直播",吉林纪录片轮播
-http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/da805d8d77a24db8aaa62328eb6d874e/index.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%A4%A9%E7%A5%9D.png" group-title="💎地方台直播",天祝
-https://play.kankanlive.com/live/1656487214793905.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%BB%B6%E6%B4%A5%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",延津电视台
-http://tvpull.dxhmt.cn:9081/tv/10726-1.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B2%B3%E5%8C%974K.png" group-title="💎地方台直播",河北4K
+https://event.pull.hebtv.com:443/live/live101.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%88%B1%E4%B8%8A%E6%B5%B7.png" group-title="💎地方台直播",爱上海
 http://bp-resource-dfl.bestv.cn/152/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%9C%8B%E4%B8%9C%E6%96%B94K.png" group-title="💎地方台直播",看东方4K
 http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%9D%92%E7%94%B0%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",青田电视台
-http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%92%B1%E6%B1%9F.png" group-title="💎地方台直播",钱江
+http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/PTSxs.png" group-title="🔮港澳台直播",PTSxs
+http://220.135.241.47:8312/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBS%20Asia.png" group-title="🔮港澳台直播",TVBS Asia
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E8%A6%96.png" group-title="🔮港澳台直播",中視
+http://211.72.174.95:8113/0.ts
 http://220.135.241.47:8301/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E8%A6%96%E6%96%B0%E8%81%9E.png" group-title="🔮港澳台直播",中視新聞
+http://220.135.241.47:8302/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E8%A6%96%E7%B6%93%E5%85%B8.png" group-title="🔮港澳台直播",中視經典
+http://220.135.241.47:8321/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E8%A6%96%E8%8F%81%E9%87%87.png" group-title="🔮港澳台直播",中視菁采
+http://220.135.241.47:8322/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%85%AC%E8%A6%96.png" group-title="🔮港澳台直播",公視
+http://211.72.174.95:8116/0.ts
+http://220.135.241.47:8305/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%85%AC%E8%A6%96%E5%8F%B0%E8%AA%9E%E5%8F%B0.png" group-title="🔮港澳台直播",公視台語台
+http://220.135.241.47:8306/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8F%B0%E8%A6%96.png" group-title="🔮港澳台直播",台視
 http://220.135.241.47:8313/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8F%B0%E8%A6%96%E6%96%B0%E8%81%9E.png" group-title="🔮港澳台直播",台視新聞
+http://220.135.241.47:8314/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8F%B0%E8%A6%96%E7%B6%9C%E5%90%88.png" group-title="🔮港澳台直播",台視綜合
+http://220.135.241.47:8316/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8F%B0%E8%A6%96%E8%B2%A1%E7%B6%93.png" group-title="🔮港澳台直播",台視財經
+http://220.135.241.47:8315/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%AE%A2%E5%AE%B6%E7%94%B5%E8%A7%86.png" group-title="🔮港澳台直播",客家电视
+http://220.135.241.47:8303/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%9D%B1%E6%A3%AE%E6%96%B0%E8%81%9E.png" group-title="🔮港澳台直播",東森新聞
+http://211.72.174.95:8138/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B0%91%E8%A6%96.png" group-title="🔮港澳台直播",民視
+http://211.72.174.95:8115/0.ts
 http://220.135.241.47:8308/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B0%91%E8%A6%96%E5%8F%B0%E7%81%A3%E5%8F%B0.png" group-title="🔮港澳台直播",民視台灣台
+http://220.135.241.47:8311/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B0%91%E8%A6%96%E6%96%B0%E8%81%9E.png" group-title="🔮港澳台直播",民視新聞
+http://211.72.174.95:8117/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B0%91%E8%A6%96%E7%AC%AC%E4%B8%80%E5%8F%B0.png" group-title="🔮港澳台直播",民視第一台
+http://220.135.241.47:8309/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8F%AF%E8%A6%96.png" group-title="🔮港澳台直播",華視
+http://211.72.174.95:8114/0.ts
 http://220.135.241.47:8317/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8F%AF%E8%A6%96%E6%95%99%E8%82%B2%E9%AB%94%E8%82%B2%E6%96%87%E5%8C%96.png" group-title="🔮港澳台直播",華視教育體育文化
+http://220.135.241.47:8318/0.ts
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8F%AF%E8%A6%96%E6%96%B0%E8%81%9E%E8%B3%87%E8%A8%8A.png" group-title="🔮港澳台直播",華視新聞資訊
+http://220.135.241.47:8319/0.ts
