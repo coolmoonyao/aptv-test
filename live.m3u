@@ -3,14 +3,18 @@
 http://bp-resource-dfl.bestv.cn/151/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/QVC.png" group-title="🇯🇵日本直播",QVC
 https://d1flvb4iqlercm.cloudfront.net/r-channel/live.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/MBC%20Chuncheon%20(%EC%B6%98%EC%B2%9C%20MBC)%20(480p)%20%5BNot%2024%2F7%5D.png" group-title="🇰🇷韩国直播",MBC Chuncheon (춘천 MBC) (480p) [Not 24/7]
+https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/MBC%20Yeosu%20(%EC%97%AC%EC%88%98%20MBC)%5BNot%2024%2F7%5D.png" group-title="🇰🇷韩国直播",MBC Yeosu (여수 MBC)[Not 24/7]
 https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/YBTV-1.png" group-title="💎地方台直播",YBTV-1
-https://srs.iybtv.cn/video/YBTV11/index.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/YBTV-2.png" group-title="💎地方台直播",YBTV-2
-https://srs.iybtv.cn/video/YBTV21/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Bravo%20Vault.png" group-title="🇺🇸美国直播",Bravo Vault
+https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/61a276d1-8291-4018-aba2-146304f96043/4.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CBS%202%20New%20York.png" group-title="🇺🇸美国直播",CBS 2 New York
+http://stream.cammonitorplus.net/1810/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%8A%E6%B5%B7%E6%96%B0%E7%BA%AA%E5%AE%9E.png" group-title="💎地方台直播",上海新纪实
 http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B9%8B%E6%B1%9F%E8%AE%B0%E5%BD%95.png" group-title="💎地方台直播",之江记录
+https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%88%B1%E4%B8%8A%E6%B5%B7.png" group-title="💎地方台直播",爱上海
 http://bp-resource-dfl.bestv.cn/152/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%9C%8B%E4%B8%9C%E6%96%B94K.png" group-title="💎地方台直播",看东方4K
@@ -19,8 +23,6 @@ http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/PTSxs.png" group-title="🔮港澳台直播",PTSxs
 http://220.135.241.47:8312/0.ts
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBS%E6%96%B0%E9%97%BB.png" group-title="🔮港澳台直播",TVBS新闻
-http://jnzq.ohoyee.com:9080/live/332332-tvbsxw.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E8%A6%96.png" group-title="🔮港澳台直播",中視
 http://211.72.174.95:8113/0.ts
 http://220.135.241.47:8301/0.ts
@@ -45,8 +47,6 @@ http://220.135.241.47:8316/0.ts
 http://220.135.241.47:8315/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%AE%A2%E5%AE%B6%E7%94%B5%E8%A7%86.png" group-title="🔮港澳台直播",客家电视
 http://220.135.241.47:8303/0.ts
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%AF%B0%E5%AE%87%E6%96%B0%E9%97%BB.png" group-title="🔮港澳台直播",寰宇新闻
-http://jnzq.ohoyee.com:9080/live/332332-hyxw.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%9D%B1%E6%A3%AE%E6%96%B0%E8%81%9E.png" group-title="🔮港澳台直播",東森新聞
 http://211.72.174.95:8138/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B0%91%E8%A6%96.png" group-title="🔮港澳台直播",民視
@@ -59,8 +59,8 @@ http://211.72.174.95:8117/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B0%91%E8%A6%96%E7%AC%AC%E4%B8%80%E5%8F%B0.png" group-title="🔮港澳台直播",民視第一台
 http://220.135.241.47:8309/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8F%AF%E8%A6%96.png" group-title="🔮港澳台直播",華視
-http://220.135.241.47:8317/0.ts
 http://211.72.174.95:8114/0.ts
+http://220.135.241.47:8317/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8F%AF%E8%A6%96%E6%95%99%E8%82%B2%E9%AB%94%E8%82%B2%E6%96%87%E5%8C%96.png" group-title="🔮港澳台直播",華視教育體育文化
 http://220.135.241.47:8318/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8F%AF%E8%A6%96%E6%96%B0%E8%81%9E%E8%B3%87%E8%A8%8A.png" group-title="🔮港澳台直播",華視新聞資訊
