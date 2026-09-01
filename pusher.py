@@ -5,7 +5,7 @@ from pathlib import Path
 
 import shutil
 
-# git 可执行文件：与 ffprobe 同理，自动化环境的 PATH 可能不含完整目录
+# git 可执行文件：自动化环境的 PATH 可能不含完整目录
 GIT = shutil.which("git") or "/usr/bin/git"
 
 
@@ -13,38 +13,41 @@ def _run(cmd: list[str], cwd: str) -> subprocess.CompletedProcess:
     return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
 
 
-def _clear_stale_lock(repo_dir: str) -> None:
-    """清理上一次异常退出遗留的 index.lock（0 字节/陈旧锁）。"""
+def _clear_lock(repo_dir: str) -> None:
+    """清理 index.lock。
+
+    macOS 上 git 因 com.apple.provenance 扩展属性会在 rename 后无法 unlink
+    index.lock，遗留 0 字节锁文件阻塞后续操作。每次 git 写操作后清理之。
+    """
     lock = Path(repo_dir) / ".git" / "index.lock"
-    if not lock.exists():
-        return
-    # 仅当没有正在运行的 git 进程时才删除，避免误删活动锁
-    alive = subprocess.run(
-        ["pgrep", "-f", f"git .*{Path(repo_dir).name}"],
-        capture_output=True, text=True,
-    )
-    if alive.returncode == 0 and alive.stdout.strip():
-        return
-    try:
-        lock.unlink()
-    except OSError:
-        pass
+    if lock.exists():
+        try:
+            lock.unlink()
+        except OSError:
+            pass
+
+
+def _git(cmd: list[str], repo_dir: str) -> subprocess.CompletedProcess:
+    r = _run([GIT, *cmd], repo_dir)
+    _clear_lock(repo_dir)
+    return r
 
 
 def push(repo_dir: str, filename: str, branch: str, commit_msg: str | None = None) -> bool:
     """git add + commit + push，无变化返回 False，失败抛出异常。"""
-    _clear_stale_lock(repo_dir)
+    _clear_lock(repo_dir)
 
-    r = _run([GIT, "add", filename], repo_dir)
+    r = _git(["add", filename], repo_dir)
     if r.returncode != 0:
         raise RuntimeError(f"git add 失败：{r.stderr.strip()}")
 
     status = _run([GIT, "status", "--porcelain", "--", filename], repo_dir)
+    _clear_lock(repo_dir)
     if not status.stdout.strip():
         return False
 
     msg = commit_msg or "chore: 每日自动更新直播源"
-    r = _run([GIT, "commit", "-m", msg], repo_dir)
+    r = _git(["commit", "-m", msg], repo_dir)
     if r.returncode != 0:
         raise RuntimeError(f"git commit 失败：{r.stderr.strip()}")
 
