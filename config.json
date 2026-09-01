@@ -45,7 +45,7 @@
   ],
   "min_width": 1920,
   "min_height": 1080,
-  "max_response_ms": 1000,
+  "max_response_ms": 1500,
   "concurrency": 30,
   "ffprobe_timeout_s": 10,
   "output_filename": "live.m3u",
