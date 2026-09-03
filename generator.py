@@ -45,22 +45,29 @@ def apply_probe_filters(
     - None                        死链（网络错误 / 全部 4xx/5xx）
 
     白名单组 keep_groups：能确认分辨率且 < min_w×min_h 则去除；无法确认
-    （软 2xx）则保留（疑罪从无，不因 ffprobe 解析不出而误杀）。死链一律剔除。
+    （软 2xx 或彻底探测不到：403/404/翻墙/专网）则默认保留，用默认 UA 兜底
+    （疑罪从无——这些源在脚本机上探测不到，但用户在手机端实测可播）。
     其余条目照旧：须同时满足分辨率门禁与响应时间门禁。
     """
     min_w = cfg.get("min_width", 1920)
     min_h = cfg.get("min_height", 1080)
-    max_ms = cfg.get("max_response_ms", 1000)
+    max_ms = cfg.get("max_response_ms", 2000)
     keep_groups = cfg.get("keep_groups", [])
+    default_ua = (cfg.get("user_agents") or ["okHttp/Mod-1.5.0.0"])[0]
     out = []
     for e, res in results:
-        if res is None:
-            continue  # 死链，一律剔除
-        w, h, ms, ua, ref = res
         grp = e.get("group", "")
         in_keep = keep_groups and any(g and g in grp for g in keep_groups)
         if in_keep:
-            # 白名单：确认 <1080 去除，无法确认(软2xx)保留
+            if res is None:
+                # 无法探测（死链/403/404/翻墙）：默认保留，默认 UA 兜底
+                out.append({
+                    **e, "width": 0, "height": 0,
+                    "response_ms": 999999, "ua": default_ua, "referer": "",
+                })
+                continue
+            w, h, ms, ua, ref = res
+            # 白名单：确认 <1080 去除，无法确认保留
             if w is None or h is None:
                 out.append({
                     **e, "width": 0, "height": 0,
@@ -73,6 +80,9 @@ def apply_probe_filters(
                 })
             # else: 确认分辨率 <1080 → 去除
         else:
+            if res is None:
+                continue  # 非白名单：死链剔除
+            w, h, ms, ua, ref = res
             if w is None or h is None:
                 continue  # 非白名单：无法确认分辨率按不达标处理
             if w >= min_w and h >= min_h and ms <= max_ms:

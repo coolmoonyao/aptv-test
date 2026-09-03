@@ -90,11 +90,12 @@ async def _http_first_byte(
 async def _probe_resolution(
     url: str, timeout_s: float, ua: str, referer: str
 ) -> tuple[int, int] | str | None:
-    """ffprobe 探测分辨率，三态返回：
+    """ffprobe 探测分辨率，四态返回：
 
     - (w, h)   成功拿到分辨率
     - "opened" ffprobe 成功打开流（退出码 0）但无 width/height 元数据
-    - None     打开失败 / 超时（翻墙、错误页、死链等）
+    - "timeout" 超时：流可达但下载分片太慢（海外源常见），视作「活着但未知分辨率」
+    - None     打开失败（翻墙 403/错误页/非法数据），真正的死链
     """
     cmd = _ffprobe_cmd(url, ua, referer)
     try:
@@ -110,7 +111,7 @@ async def _probe_resolution(
     except asyncio.TimeoutError:
         proc.kill()
         await proc.wait()
-        return None
+        return "timeout"
     text = out.decode(errors="ignore").strip()
     parts = [p for p in text.splitlines() if p.strip()]
     if len(parts) >= 2:
@@ -142,27 +143,25 @@ async def probe_one(
 
     依次尝试候选 UA×Referer，命中即停：
     - 2xx/3xx + ffprobe 解析成功 → 返回成功
-    - 2xx 但 ffprobe 失败 → 记下软 2xx 命中头，换组合再试
+    - 2xx 但 ffprobe 打开无元数据 / 超时 → 活着但未知分辨率（软 2xx），
+      立即返回，不再换组合（换 UA 也救不回来，避免海外慢源拖满 8 组合）
+    - 2xx 但 ffprobe 打开失败（非法数据/错误页）→ 换组合再试（可能防盗链）
     - 明确 4xx/5xx → 防盗链拒绝，换组合再试
-    - 网络错误/超时 → 死链，直接放弃（换 UA 也救不回来，避免拖慢整体）
+    - 网络错误/超时 → 死链，直接放弃（换 UA 也救不回来）
     """
-    soft_ua = soft_ref = None
-    soft_ms = 0.0
     for ua, ref in _ordered_combos(user_agents, referers, preferred):
         ok, ms, status = await _http_first_byte(client, url, ua, ref)
         if ok:
             wh = await _probe_resolution(url, timeout_s, ua, ref)
             if isinstance(wh, tuple):
                 return wh[0], wh[1], round(ms), ua, ref
-            if wh == "opened" and soft_ua is None:
-                # ffprobe 成功打开流但无分辨率元数据：真·软 2xx
-                soft_ua, soft_ref, soft_ms = ua, ref, ms
-            continue  # 打不开(翻墙/错误页)或软 2xx：换下一组合
+            if wh in ("opened", "timeout"):
+                # 活着但未知分辨率：软 2xx，立即返回
+                return None, None, round(ms), ua, ref
+            continue  # 非法数据/错误页：换下一组合
         if status is None:
             return None  # 网络错误/超时：死链，不再尝试
         # 明确 4xx/5xx：防盗链拒绝，继续换下一组合
-    if soft_ua is not None:
-        return None, None, round(soft_ms), soft_ua, soft_ref
     return None
 
 

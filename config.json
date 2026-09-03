@@ -15,21 +15,23 @@
   "embed_extvlcopt": true,
   "hit_headers_cache": "hit_headers.json",
   "keep_groups": [
-    "今日影视直播",
-    "咪视界直播",
-    "地方台直播",
-    "央卫视直播",
-    "4GTV直播1"
+    "今日影视",
+    "港澳台",
+    "咪视界",
+    "地方台",
+    "4GTV直播1",
+    "央卫视直播1"
   ],
   "merge_international": {
     "enabled": true,
-    "group_name": "国际直播",
+    "group_name": "全球节目",
     "group_match": [
-      "美国直播",
-      "日本直播",
-      "韩国直播",
-      "英国直播",
-      "法国直播"
+      "美国",
+      "日本",
+      "韩国",
+      "英国",
+      "法国",
+      "新加坡"
     ],
     "name_match": [
       "France",
@@ -37,27 +39,28 @@
       "UK",
       "BBC",
       "英国",
-      "法国"
+      "法国",
+      "新加坡",
+      "Singapore",
+      "CNA",
+      "Mediacorp"
     ]
   },
   "include_keywords": [
-    "港澳台",
-    "央卫视",
-    "央视",
-    "CCTV",
-    "卫视",
-    "地方台",
-    "日本",
     "美国",
+    "日本",
     "韩国",
-    "NHK",
-    "今日影视",
     "英国",
     "法国",
+    "新加坡",
+    "NHK",
     "France",
     "England",
     "UK",
-    "BBC"
+    "BBC",
+    "Singapore",
+    "CNA",
+    "Mediacorp"
   ],
   "exclude_keywords": [
     "移动",
@@ -90,9 +93,9 @@
   ],
   "min_width": 1920,
   "min_height": 1080,
-  "max_response_ms": 1500,
-  "concurrency": 30,
-  "ffprobe_timeout_s": 10,
+  "max_response_ms": 2000,
+  "concurrency": 12,
+  "ffprobe_timeout_s": 15,
   "output_filename": "live.m3u",
   "github_repo": "coolmoonyao/aptv-test",
   "github_branch": "main"
