@@ -7,12 +7,21 @@
 
 
 def filter_by_keywords(entries: list[dict], cfg: dict) -> list[dict]:
-    """按 include/exclude 关键词过滤（对 group-title + 名称匹配）。"""
+    """按 include/exclude 关键词过滤（对 group-title + 名称匹配）。
+
+    keep_groups 中的分组为白名单：整组无条件保留，不参与 include/exclude
+    关键词过滤（用于「这几个分类的节目全部保留」的场景）。
+    """
     inc = cfg.get("include_keywords", [])
     exc = cfg.get("exclude_keywords", [])
+    keep_groups = cfg.get("keep_groups", [])
     out = []
     for e in entries:
-        text = f"{e['group']} {e['name']}"
+        grp = e.get("group", "")
+        if keep_groups and any(g and g in grp for g in keep_groups):
+            out.append(e)
+            continue
+        text = f"{grp} {e['name']}"
         if exc and any(k and k in text for k in exc):
             continue
         if inc and any(k and k in text for k in inc):
@@ -23,16 +32,24 @@ def filter_by_keywords(entries: list[dict], cfg: dict) -> list[dict]:
 def apply_probe_filters(
     results: list[tuple[dict, tuple[int, int, float, str, str] | None]], cfg: dict
 ) -> list[dict]:
-    """按分辨率与响应时间筛选，给通过的条目附加 width/height/response_ms/ua/referer。"""
+    """按分辨率与响应时间筛选，给通过的条目附加 width/height/response_ms/ua/referer。
+
+    keep_groups 分组豁免画质/响应时间门禁：只要探测存活（有分辨率）即保留，
+    不限 1080p 或响应时间；其余条目仍须满足 min_width×min_height 且 <= max_ms。
+    死链（res is None）无论是否 keep_groups 一律剔除。
+    """
     min_w = cfg.get("min_width", 1920)
     min_h = cfg.get("min_height", 1080)
     max_ms = cfg.get("max_response_ms", 1000)
+    keep_groups = cfg.get("keep_groups", [])
     out = []
     for e, res in results:
         if res is None:
             continue
         w, h, ms, ua, ref = res
-        if w >= min_w and h >= min_h and ms <= max_ms:
+        grp = e.get("group", "")
+        in_keep = keep_groups and any(g and g in grp for g in keep_groups)
+        if in_keep or (w >= min_w and h >= min_h and ms <= max_ms):
             out.append({
                 **e,
                 "width": w,

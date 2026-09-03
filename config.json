@@ -14,6 +14,13 @@
   ],
   "embed_extvlcopt": true,
   "hit_headers_cache": "hit_headers.json",
+  "keep_groups": [
+    "今日影视直播",
+    "咪视界直播",
+    "地方台直播",
+    "央卫视直播",
+    "4GTV直播"
+  ],
   "include_keywords": [
     "港澳台",
     "央卫视",
