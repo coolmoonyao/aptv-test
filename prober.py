@@ -89,8 +89,13 @@ async def _http_first_byte(
 
 async def _probe_resolution(
     url: str, timeout_s: float, ua: str, referer: str
-) -> tuple[int, int] | None:
-    """ffprobe 取 (width, height)，失败返回 None。"""
+) -> tuple[int, int] | str | None:
+    """ffprobe 探测分辨率，三态返回：
+
+    - (w, h)   成功拿到分辨率
+    - "opened" ffprobe 成功打开流（退出码 0）但无 width/height 元数据
+    - None     打开失败 / 超时（翻墙、错误页、死链等）
+    """
     cmd = _ffprobe_cmd(url, ua, referer)
     try:
         proc = await asyncio.create_subprocess_exec(
@@ -112,10 +117,11 @@ async def _probe_resolution(
         try:
             w, h = int(parts[0]), int(parts[1])
         except ValueError:
-            return None
+            w = h = 0
         if w > 0 and h > 0:
             return w, h
-    return None
+    # 无有效分辨率：退出码 0 = 成功打开但无元数据；否则打开失败
+    return "opened" if proc.returncode == 0 else None
 
 
 async def probe_one(
@@ -125,25 +131,38 @@ async def probe_one(
     user_agents: list[str],
     referers: list[str],
     preferred: list | None = None,
-) -> tuple[int, int, float, str, str] | None:
-    """返回 (width, height, response_ms, ua, referer)，失败返回 None。
+) -> tuple | None:
+    """返回探测结果，三态：
+
+    - (w, h, ms, ua, ref)          成功，w/h 为真实分辨率
+    - (None, None, ms, ua, ref)    HTTP 可达（2xx/3xx）但 ffprobe 无法
+                                    确认分辨率（软 2xx：返回错误页/空流/
+                                    格式特殊），记录首个软 2xx 的命中头
+    - None                          死链（网络错误/超时，或全部组合 4xx/5xx）
 
     依次尝试候选 UA×Referer，命中即停：
-    - 2xx/3xx + ffprobe 解析成功 → 返回结果（命中组合）
-    - 2xx 但 ffprobe 失败 → 「软 2xx」（200 返回错误页/空流），换组合再试
+    - 2xx/3xx + ffprobe 解析成功 → 返回成功
+    - 2xx 但 ffprobe 失败 → 记下软 2xx 命中头，换组合再试
     - 明确 4xx/5xx → 防盗链拒绝，换组合再试
     - 网络错误/超时 → 死链，直接放弃（换 UA 也救不回来，避免拖慢整体）
     """
+    soft_ua = soft_ref = None
+    soft_ms = 0.0
     for ua, ref in _ordered_combos(user_agents, referers, preferred):
         ok, ms, status = await _http_first_byte(client, url, ua, ref)
         if ok:
             wh = await _probe_resolution(url, timeout_s, ua, ref)
-            if wh is not None:
+            if isinstance(wh, tuple):
                 return wh[0], wh[1], round(ms), ua, ref
-            continue  # 软 2xx：换下一组合
+            if wh == "opened" and soft_ua is None:
+                # ffprobe 成功打开流但无分辨率元数据：真·软 2xx
+                soft_ua, soft_ref, soft_ms = ua, ref, ms
+            continue  # 打不开(翻墙/错误页)或软 2xx：换下一组合
         if status is None:
             return None  # 网络错误/超时：死链，不再尝试
         # 明确 4xx/5xx：防盗链拒绝，继续换下一组合
+    if soft_ua is not None:
+        return None, None, round(soft_ms), soft_ua, soft_ref
     return None
 
 

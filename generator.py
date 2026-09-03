@@ -3,6 +3,11 @@
 探测结果从 3 元组 (w, h, ms) 扩展为 5 元组 (w, h, ms, ua, referer)，
 命中头随 URL 一并透传，供最终 m3u 写入 #EXTVLCOPT 头（VLC 系播放器
 会据此用正确的 UA/Referer 请求，从而解锁只认特定客户端的源）。
+
+res 三态：
+- (w, h, ms, ua, ref)         探测成功
+- (None, None, ms, ua, ref)   HTTP 可达但分辨率未知（软 2xx）
+- None                        死链
 """
 
 
@@ -30,13 +35,18 @@ def filter_by_keywords(entries: list[dict], cfg: dict) -> list[dict]:
 
 
 def apply_probe_filters(
-    results: list[tuple[dict, tuple[int, int, float, str, str] | None]], cfg: dict
+    results: list[tuple[dict, tuple | None]], cfg: dict
 ) -> list[dict]:
     """按分辨率与响应时间筛选，给通过的条目附加 width/height/response_ms/ua/referer。
 
-    keep_groups 分组豁免画质/响应时间门禁：只要探测存活（有分辨率）即保留，
-    不限 1080p 或响应时间；其余条目仍须满足 min_width×min_height 且 <= max_ms。
-    死链（res is None）无论是否 keep_groups 一律剔除。
+    res 三态：
+    - (w, h, ms, ua, ref)         探测成功，w/h 为真实分辨率
+    - (None, None, ms, ua, ref)   HTTP 可达但 ffprobe 无法确认分辨率（软 2xx）
+    - None                        死链（网络错误 / 全部 4xx/5xx）
+
+    白名单组 keep_groups：能确认分辨率且 < min_w×min_h 则去除；无法确认
+    （软 2xx）则保留（疑罪从无，不因 ffprobe 解析不出而误杀）。死链一律剔除。
+    其余条目照旧：须同时满足分辨率门禁与响应时间门禁。
     """
     min_w = cfg.get("min_width", 1920)
     min_h = cfg.get("min_height", 1080)
@@ -45,20 +55,56 @@ def apply_probe_filters(
     out = []
     for e, res in results:
         if res is None:
-            continue
+            continue  # 死链，一律剔除
         w, h, ms, ua, ref = res
         grp = e.get("group", "")
         in_keep = keep_groups and any(g and g in grp for g in keep_groups)
-        if in_keep or (w >= min_w and h >= min_h and ms <= max_ms):
-            out.append({
-                **e,
-                "width": w,
-                "height": h,
-                "response_ms": ms,
-                "ua": ua,
-                "referer": ref,
-            })
+        if in_keep:
+            # 白名单：确认 <1080 去除，无法确认(软2xx)保留
+            if w is None or h is None:
+                out.append({
+                    **e, "width": 0, "height": 0,
+                    "response_ms": ms, "ua": ua, "referer": ref,
+                })
+            elif w >= min_w and h >= min_h:
+                out.append({
+                    **e, "width": w, "height": h,
+                    "response_ms": ms, "ua": ua, "referer": ref,
+                })
+            # else: 确认分辨率 <1080 → 去除
+        else:
+            if w is None or h is None:
+                continue  # 非白名单：无法确认分辨率按不达标处理
+            if w >= min_w and h >= min_h and ms <= max_ms:
+                out.append({
+                    **e, "width": w, "height": h,
+                    "response_ms": ms, "ua": ua, "referer": ref,
+                })
     return out
+
+
+def merge_groups(entries: list[dict], cfg: dict) -> list[dict]:
+    """按配置把多国频道归并到统一分组（如美日韩英法 → 国际直播）。
+
+    group_match 按「分组名」精确归并（避免误伤 name 里带国别的频道，
+    如港澳台组的「纬来日本」）；name_match 作为散落频道的兜底（如
+    俄罗斯组里的 France 24）。
+    """
+    merge = cfg.get("merge_international")
+    if not merge or not merge.get("enabled"):
+        return entries
+    target = merge.get("group_name", "国际直播")
+    gmatch = merge.get("group_match", [])
+    nmatch = merge.get("name_match", [])
+    for e in entries:
+        grp = e.get("group", "")
+        if gmatch and any(k and k in grp for k in gmatch):
+            e["group"] = target
+            continue
+        name = e.get("name", "")
+        if nmatch and any(k and k in name for k in nmatch):
+            e["group"] = target
+    return entries
 
 
 def merge_and_sort(entries: list[dict]) -> list[dict]:

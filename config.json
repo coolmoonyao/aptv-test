@@ -19,8 +19,27 @@
     "咪视界直播",
     "地方台直播",
     "央卫视直播",
-    "4GTV直播"
+    "4GTV直播1"
   ],
+  "merge_international": {
+    "enabled": true,
+    "group_name": "国际直播",
+    "group_match": [
+      "美国直播",
+      "日本直播",
+      "韩国直播",
+      "英国直播",
+      "法国直播"
+    ],
+    "name_match": [
+      "France",
+      "England",
+      "UK",
+      "BBC",
+      "英国",
+      "法国"
+    ]
+  },
   "include_keywords": [
     "港澳台",
     "央卫视",
@@ -32,7 +51,13 @@
     "美国",
     "韩国",
     "NHK",
-    "今日影视"
+    "今日影视",
+    "英国",
+    "法国",
+    "France",
+    "England",
+    "UK",
+    "BBC"
   ],
   "exclude_keywords": [
     "移动",

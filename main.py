@@ -91,9 +91,9 @@ async def run() -> dict:
     _save_hit_headers(hit_cache_path, hit_headers)
 
     ok = generator.apply_probe_filters(results, cfg)
-    print(f"[main] 满足 分辨率>={cfg.get('min_width')}x{cfg.get('min_height')} "
-          f"且 <={cfg.get('max_response_ms')}ms：{len(ok)} 条")
+    print(f"[main] 探测筛选后保留 {len(ok)} 条")
 
+    ok = generator.merge_groups(ok, cfg)
     merged = generator.merge_and_sort(ok)
     print(f"[main] 同名合并后 {len(merged)} 个节目")
 
