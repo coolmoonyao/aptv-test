@@ -1,7 +1,390 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV1.png" group-title="🇨🇳央卫视直播1",CCTV1
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/1.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV10.png" group-title="🇨🇳央卫视直播1",CCTV10
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/11.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV11.png" group-title="🇨🇳央卫视直播1",CCTV11
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/12.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV12.png" group-title="🇨🇳央卫视直播1",CCTV12
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/13.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV13.png" group-title="🇨🇳央卫视直播1",CCTV13
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/14.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV14.png" group-title="🇨🇳央卫视直播1",CCTV14
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/15.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV15.png" group-title="🇨🇳央卫视直播1",CCTV15
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/16.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV17.png" group-title="🇨🇳央卫视直播1",CCTV17
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/17.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV2.png" group-title="🇨🇳央卫视直播1",CCTV2
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/2.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV3.png" group-title="🇨🇳央卫视直播1",CCTV3
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/3.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV4.png" group-title="🇨🇳央卫视直播1",CCTV4
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/4.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV5.png" group-title="🇨🇳央卫视直播1",CCTV5
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/5.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV5%2B.png" group-title="🇨🇳央卫视直播1",CCTV5+
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/6.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV6.png" group-title="🇨🇳央卫视直播1",CCTV6
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/7.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV7.png" group-title="🇨🇳央卫视直播1",CCTV7
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/8.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV8.png" group-title="🇨🇳央卫视直播1",CCTV8
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/9.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV9.png" group-title="🇨🇳央卫视直播1",CCTV9
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/10.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播1",东方卫视
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://bp-resource-dfl.bestv.cn/151/3/video.m3u8
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/651632648
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/26.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%86%9C%E6%9E%97%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播1",农林卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://45.192.97.170:8880/play/35.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%BB%B6%E8%BE%B9%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播1",延边卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://srs.iybtv.cn/video/CYS1/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%BE%BD%E5%AE%81%E4%BD%93%E8%82%B2.png" group-title="🇨🇳央卫视直播1",辽宁体育
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/25.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%99%95%E8%A5%BF%E4%BD%93%E8%82%B2.png" group-title="🇨🇳央卫视直播1",陕西体育
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/24.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/24%E5%B0%8F%E6%97%B6%E5%9F%8E%E5%B8%82%E8%81%94%E8%B5%9B%E8%BD%AE%E6%92%AD%E5%8F%B0.png" group-title="🇨🇳央卫视直播2",24小时城市联赛轮播台
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/915512915
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV10%E7%A7%91%E6%95%99.png" group-title="🇨🇳央卫视直播2",CCTV10科教
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/624878405
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV11%E6%88%8F%E6%9B%B2.png" group-title="🇨🇳央卫视直播2",CCTV11戏曲
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/667987558
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV12%E7%A4%BE%E4%BC%9A%E4%B8%8E%E6%B3%95.png" group-title="🇨🇳央卫视直播2",CCTV12社会与法
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/673168185
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV13%E6%96%B0%E9%97%BB.png" group-title="🇨🇳央卫视直播2",CCTV13新闻
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/608807423
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV14%E5%B0%91%E5%84%BF.png" group-title="🇨🇳央卫视直播2",CCTV14少儿
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/624878440
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV15%E9%9F%B3%E4%B9%90.png" group-title="🇨🇳央卫视直播2",CCTV15音乐
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/673168223
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV17%E5%86%9C%E4%B8%9A%E5%86%9C%E6%9D%91.png" group-title="🇨🇳央卫视直播2",CCTV17农业农村
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/673168256
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV1%E7%BB%BC%E5%90%88.png" group-title="🇨🇳央卫视直播2",CCTV1综合
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/608807420
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV2%E8%B4%A2%E7%BB%8F.png" group-title="🇨🇳央卫视直播2",CCTV2财经
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/631780532
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV3%E7%BB%BC%E8%89%BA.png" group-title="🇨🇳央卫视直播2",CCTV3综艺
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/624878271
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV4%E4%B8%AD%E6%96%87%E5%9B%BD%E9%99%85.png" group-title="🇨🇳央卫视直播2",CCTV4中文国际
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/631780421
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV4%E6%AC%A7%E6%B4%B2.png" group-title="🇨🇳央卫视直播2",CCTV4欧洲
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/608807419
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/18.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV4%E7%BE%8E%E6%B4%B2.png" group-title="🇨🇳央卫视直播2",CCTV4美洲
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/608807416
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/19.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV5%2B%E4%BD%93%E8%82%B2%E8%B5%9B%E4%BA%8B.png" group-title="🇨🇳央卫视直播2",CCTV5+体育赛事
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/641886773
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV5%E4%BD%93%E8%82%B2.png" group-title="🇨🇳央卫视直播2",CCTV5体育
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/641886683
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV6%E7%94%B5%E5%BD%B1.png" group-title="🇨🇳央卫视直播2",CCTV6电影
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/624878396
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV7%E5%9B%BD%E9%98%B2%E5%86%9B%E4%BA%8B.png" group-title="🇨🇳央卫视直播2",CCTV7国防军事
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/673168121
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV8%E7%94%B5%E8%A7%86%E5%89%A7.png" group-title="🇨🇳央卫视直播2",CCTV8电视剧
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/624878356
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV9%E7%BA%AA%E5%BD%95.png" group-title="🇨🇳央卫视直播2",CCTV9纪录
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/673168140
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CETV1.png" group-title="🇨🇳央卫视直播2",CETV1
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/923287154
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CETV2.png" group-title="🇨🇳央卫视直播2",CETV2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/923287211
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CETV4.png" group-title="🇨🇳央卫视直播2",CETV4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+http://120.48.113.49:6006/923287339
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN.png" group-title="🇨🇳央卫视直播2",CGTN
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/609017205
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN%E4%BF%84%E8%AF%AD.png" group-title="🇨🇳央卫视直播2",CGTN俄语
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/609006446
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN%E5%A4%96%E8%AF%AD%E7%BA%AA%E5%BD%95.png" group-title="🇨🇳央卫视直播2",CGTN外语纪录
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/609006487
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN%E6%B3%95%E8%AF%AD.png" group-title="🇨🇳央卫视直播2",CGTN法语
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/609006476
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD.png" group-title="🇨🇳央卫视直播2",CGTN西班牙语
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/609006450
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN%E9%98%BF%E6%8B%89%E4%BC%AF%E8%AF%AD.png" group-title="🇨🇳央卫视直播2",CGTN阿拉伯语
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/609154345
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CHC%E5%BD%B1%E8%BF%B7%E7%94%B5%E5%BD%B1.png" group-title="🇨🇳央卫视直播2",CHC影迷电影
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/952383261
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%89%E6%B2%99%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",三沙卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/961023778
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%9C%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",东南卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/849116810
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E5%8D%8E%E7%89%B9%E4%BA%A7.png" group-title="🇨🇳央卫视直播2",中华特产
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+http://120.48.113.49:6006/959986618
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E5%9B%BD%E5%86%9C%E6%9E%97%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",中国农林卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/956904896
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E5%9B%BD%E5%A4%A9%E6%B0%94.png" group-title="🇨🇳央卫视直播2",中国天气
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/959986621
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E5%AD%A6%E7%94%9F.png" group-title="🇨🇳央卫视直播2",中学生
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/708869532
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%BD%93%E5%9D%9B%E5%90%8D%E6%A0%8F%E6%B1%87.png" group-title="🇨🇳央卫视直播2",体坛名栏汇
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/629943305
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/21.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%85%B5%E5%9B%A2%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",兵团卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/956923145
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/36.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8C%97%E4%BA%AC%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",北京卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/630287636
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/29.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E6%96%B9%E5%BD%B1%E8%A7%86.png" group-title="🇨🇳央卫视直播2",南方影视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/614961829
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8F%91%E7%8E%B0%E4%B9%8B%E6%97%85.png" group-title="🇨🇳央卫视直播2",发现之旅
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/624878970
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",吉林卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/947472500
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%92%8C%E7%BE%8E%E4%B9%A1%E9%80%94%E8%BD%AE%E6%92%AD%E5%8F%B0.png" group-title="🇨🇳央卫视直播2",和美乡途轮播台
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/713591450
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%98%89%E4%BD%B3%E5%8D%A1%E9%80%9A.png" group-title="🇨🇳央卫视直播2",嘉佳卡通
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/614952364
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%9B%9B%E6%B5%B7%E9%92%93%E9%B1%BC.png" group-title="🇨🇳央卫视直播2",四海钓鱼
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/637444975
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/22.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",大湾区卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/608917627
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/23.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",宁夏卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/738910535
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%B1%B1%E4%B8%9C%E6%95%99%E8%82%B2.png" group-title="🇨🇳央卫视直播2",山东教育
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/609154353
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",广东卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/608831231
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/28.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%BB%BA%E5%85%9A105%E5%91%A8%E5%B9%B4%E5%B7%A1%E7%A4%BC.png" group-title="🇨🇳央卫视直播2",建党105周年巡礼
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/713600957
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%BF%AB%E4%B9%90%E5%9E%82%E9%92%93.png" group-title="🇨🇳央卫视直播2",快乐垂钓
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/961930263
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/KLCDMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%96%B0%E5%8A%A8%E5%8A%9B%E9%87%8F%E5%88%9B%E4%B8%80%E6%B5%81.png" group-title="🇨🇳央卫视直播2",新动力量创一流
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/713589837
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%96%B0%E5%8A%A8%E6%BC%AB.png" group-title="🇨🇳央卫视直播2",新动漫
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/961930269
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%96%B0%E7%89%87%E6%94%BE%E6%98%A0%E5%8E%85.png" group-title="🇨🇳央卫视直播2",新片放映厅
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/619495952
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%9C%80%E5%BC%BA%E7%BB%BC%E8%89%BA%E8%B6%B4.png" group-title="🇨🇳央卫视直播2",最强综艺趴
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/629942228
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%A2%A8%E5%9B%AD%E9%A2%91%E9%81%93.png" group-title="🇨🇳央卫视直播2",梨园频道
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/961930369
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",江苏卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/623899368
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/27.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B1%9F%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",江西卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/783847495
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://45.192.97.170:8880/play/32.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B2%B3%E5%8C%97%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",河北卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/962042070
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/31.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",河南卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/790187291
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B5%B7%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",海南卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/947472502
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8C%97%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",湖北卫视
+#EXTVLCOPT:http-user-agent=Dart/3.2.0 (dart:io)
+http://120.48.113.49:6006/947472496
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://45.192.97.170:8880/play/34.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%9301%E9%AB%98%E6%B8%85.png" group-title="🇨🇳央卫视直播2",熊猫频道01高清
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/609158151
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%931.png" group-title="🇨🇳央卫视直播2",熊猫频道1
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/608933610
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%9310.png" group-title="🇨🇳央卫视直播2",熊猫频道10
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/609169285
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%932.png" group-title="🇨🇳央卫视直播2",熊猫频道2
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/608933640
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%933.png" group-title="🇨🇳央卫视直播2",熊猫频道3
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/608934619
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%934.png" group-title="🇨🇳央卫视直播2",熊猫频道4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/608934721
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%935.png" group-title="🇨🇳央卫视直播2",熊猫频道5
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/608935104
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%936.png" group-title="🇨🇳央卫视直播2",熊猫频道6
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/608935797
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%937.png" group-title="🇨🇳央卫视直播2",熊猫频道7
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/609169286
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%938.png" group-title="🇨🇳央卫视直播2",熊猫频道8
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/609169287
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%86%8A%E7%8C%AB%E9%A2%91%E9%81%939.png" group-title="🇨🇳央卫视直播2",熊猫频道9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+http://120.48.113.49:6006/609169226
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%8E%AF%E7%90%83%E6%97%85%E6%B8%B8.png" group-title="🇨🇳央卫视直播2",环球旅游
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/958475356
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%BB%8F%E5%85%B8%E5%8A%A8%E7%94%BB%E5%A4%A7%E9%9B%86%E5%90%88.png" group-title="🇨🇳央卫视直播2",经典动画大集合
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/629942219
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%BB%8F%E5%85%B8%E9%A6%99%E6%B8%AF%E7%94%B5%E5%BD%B1.png" group-title="🇨🇳央卫视直播2",经典香港电影
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/625703337
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%80%81%E6%95%85%E4%BA%8B.png" group-title="🇨🇳央卫视直播2",老故事
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/884121956
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%B5%9B%E4%BA%8B%E6%9C%80%E7%BB%8F%E5%85%B8.png" group-title="🇨🇳央卫视直播2",赛事最经典
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.48.113.49:6006/646596895
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/20.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%BE%BD%E5%AE%81%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",辽宁卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+http://120.48.113.49:6006/630291707
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/30.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%8D%E5%BA%86%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",重庆卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/738910914
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",陕西卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+http://120.48.113.49:6006/738910838
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://45.192.97.170:8880/play/33.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",青海卫视
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/947472506
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%BB%91%E9%BE%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png" group-title="🇨🇳央卫视直播2",黑龙江卫视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://120.48.113.49:6006/738906901
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/QVC.png" group-title="🇯🇵日本直播",QVC
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 https://d1flvb4iqlercm.cloudfront.net/r-channel/live.m3u8
@@ -20,15 +403,54 @@ http://stream.cammonitorplus.net/1810/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN1.png" group-title="🇺🇸美国直播",CGTN1
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://live-stream.cgtn.com/event-live/CGTN_1_1PVvR6ZBAZ2/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/USA%20Network.png" group-title="🇺🇸美国直播",USA Network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://190.11.225.124:5000/live/usa_hd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/6.png" group-title="💎地方台直播",6
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/LQTV.png" group-title="💎地方台直播",LQTV
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/SYTV.png" group-title="💎地方台直播",SYTV
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/YBTV-1.png" group-title="💎地方台直播",YBTV-1
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://srs.iybtv.cn/video/YBTV11/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/YBTV-2.png" group-title="💎地方台直播",YBTV-2
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://srs.iybtv.cn/video/YBTV21/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Z%E5%86%9C%E6%9D%91%E9%A2%91%E9%81%93.png" group-title="💎地方台直播",Z农村频道
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://zbbf2.ahbztv.com/live/418.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%89%E5%86%9C.png" group-title="💎地方台直播",三农
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://tv.pull.hebtv.com/jishi/nongminpindao.m3u8?t=1893427200&k=f07ae1d5be12d118d136be90e032bfce
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%8A%E6%B5%B7%E6%95%99%E8%82%B2%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",上海教育电视台
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://tencent-live.setv.sh.cn/live/programme_setvweb.m3u8?txSecret=fd19aacaed289e44e3f6d8baa5485a41&txTime=82DF98A7
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%8A%E6%B5%B7%E6%96%B0%E7%BA%AA%E5%AE%9E.png" group-title="💎地方台直播",上海新纪实
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B9%8B%E6%B1%9F%E8%AE%B0%E5%BD%95.png" group-title="💎地方台直播",之江记录
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%BA%91.png" group-title="💎地方台直播",云
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%9B%BD%E9%83%BD%E5%B8%824K.png" group-title="💎地方台直播",南国都市4K
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%AE%81%E5%BD%B1%E8%A7%86%E5%A8%B1%E4%B9%90.png" group-title="💎地方台直播",南宁影视娱乐
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://hls.nntv.cn/nnlive/YSYL_244.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%AE%81%E6%96%87%E6%97%85.png" group-title="💎地方台直播",南宁文旅
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://hls.nntv.cn/nnlive/WLSH_24.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%90%89%E6%9E%97%E7%BA%AA%E5%BD%95%E7%89%87%E8%BD%AE%E6%92%AD.png" group-title="💎地方台直播",吉林纪录片轮播
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 #EXTVLCOPT:http-referrer=https://live.445569.xyz/
@@ -36,15 +458,114 @@ http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/da805d8d77a24db8aaa62328eb6d874e/in
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%A3%B6%E5%85%B3%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",壶关电视台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://zmjp3jin.live.sxmty.com/live/hls/268fe96f955d496db37fb10bb887cda9/fc196029d289449ea524a94a95379a0d.m3u8?zshanxd
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%A4%A9%E7%A5%9D.png" group-title="💎地方台直播",天祝
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://play.kankanlive.com/live/1656487214793905.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%8B%89%E8%90%A8%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E9%A2%91%E9%81%93.png" group-title="💎地方台直播",拉萨文化旅游频道
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://tvfile.lasatv.cn/nmip-media/channellive/channel103157/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%8B%89%E8%90%A8%E7%BB%BC%E5%90%88%E9%A2%91%E9%81%93.png" group-title="💎地方台直播",拉萨综合频道
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://tvfile.lasatv.cn/nmip-media/channellive/channel101894/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%8B%89%E8%90%A8%E8%97%8F%E8%AF%AD%E7%BB%BC%E5%90%88%E9%A2%91%E9%81%93.png" group-title="💎地方台直播",拉萨藏语综合频道
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://tvfile.lasatv.cn/nmip-media/channellive/channel104335/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%96%87%E5%8C%96%E5%BD%B1%E8%A7%86.png" group-title="💎地方台直播",文化影视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8?zzhed
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B2%B3%E5%8C%974K.png" group-title="💎地方台直播",河北4K
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+https://event.pull.hebtv.com:443/live/live101.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8D%97%E5%9B%BD%E9%99%85.png" group-title="💎地方台直播",湖南国际
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNGJMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8D%97%E5%A8%B1%E4%B9%90.png" group-title="💎地方台直播",湖南娱乐
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNYLMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8D%97%E5%BF%AB%E4%B9%90%E8%B4%AD.png" group-title="💎地方台直播",湖南快乐购
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/KLGMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8D%97%E7%88%B1%E6%99%9A.png" group-title="💎地方台直播",湖南爱晚
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNGGMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8D%97%E7%94%B5%E5%BD%B1.png" group-title="💎地方台直播",湖南电影
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNDYMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8D%97%E7%94%B5%E8%A7%86%E5%89%A7.png" group-title="💎地方台直播",湖南电视剧
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNDSJMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8D%97%E7%BB%8F%E8%A7%86.png" group-title="💎地方台直播",湖南经视
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNJSMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B9%96%E5%8D%97%E9%83%BD%E5%B8%82.png" group-title="💎地方台直播",湖南都市
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNDSMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%82%B9%E6%8E%8C%E8%B4%A2%E7%BB%8F.png" group-title="💎地方台直播",点掌财经
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://volcanopull.aniu.tv/live/aniu2/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%88%B1%E4%B8%8A%E6%B5%B7.png" group-title="💎地方台直播",爱上海
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://bp-resource-dfl.bestv.cn/152/3/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%9C%8B%E4%B8%9C%E6%96%B94K.png" group-title="💎地方台直播",看东方4K
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8B%8F%E5%B7%9E4K.png" group-title="💎地方台直播",苏州4K
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+https://live-auth.51kandianshi.com/szgd/csztv4k_hd.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8B%8F%E5%B7%9E%E5%A8%B1%E4%B9%90.png" group-title="💎地方台直播",苏州娱乐
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://live-auth.51kandianshi.com/szgd/csztv4.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%90%A5%E5%B1%B1.png" group-title="💎地方台直播",营山
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel101492/playlist.m3u8$1川电HD直
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%90%A7%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",萧山电视台
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%91%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",金山电视台
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://pili-live-hls.wdit.com.cn/wditlive/8818dfe5f4df45ba9a3f32964d172fb2b6d3.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%91%E9%B9%B0%E5%8D%A1%E9%80%9A.png" group-title="💎地方台直播",金鹰卡通
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/JYKTMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%91%E9%B9%B0%E7%BA%AA%E5%AE%9E.png" group-title="💎地方台直播",金鹰纪实
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/JYJSMPP360.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%92%B1%E6%B1%9F.png" group-title="💎地方台直播",钱江
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%95%BF%E6%B2%99%E6%94%BF%E6%B3%95.png" group-title="💎地方台直播",长沙政法
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/CSZFMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%95%BF%E6%B2%99%E6%96%B0%E9%97%BB.png" group-title="💎地方台直播",长沙新闻
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/CSXWMPP360.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%9D%92%E7%94%B0%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",青田电视台
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%BB%84%E6%B2%B3.png" group-title="💎地方台直播",黄河
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://113.26.251.182:8009/hls/24/index.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HOY77.png" group-title="🔮今日影视直播",HOY77
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://play.wenxiang.cn/live/43dc6fc9b1af5af8ec332f3c88b95e4a.flv
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HOY78.png" group-title="🔮今日影视直播",HOY78
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://play.wenxiang.cn/live/cf4526f51988d0ed065b5c3fa4bc925d.flv
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBPlus.png" group-title="🔮今日影视直播",TVBPlus
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://play.wenxiang.cn/live/5ec77f27f37babab48d60b879fde862a.flv
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B8%AF%E5%8F%B0%E7%94%B5%E8%A7%8631.png" group-title="🔮今日影视直播",港台电视31
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://play.wenxiang.cn/live/0f4b100c9ed81fdd547ba0a1a20dea49.flv
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B8%AF%E5%8F%B0%E7%94%B5%E8%A7%8632.png" group-title="🔮今日影视直播",港台电视32
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://play.wenxiang.cn/live/1c84d2c289c82f92f588aaa566858174.flv
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%BF%A1%E7%BF%A0%E5%8F%B0.png" group-title="🔮今日影视直播",翡翠台
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://play.wenxiang.cn/live/e240363d284b6f41fcb7136eef507ef6.flv
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGN%E4%B8%AD%E6%96%87%E5%8F%B0.png" group-title="🔮港澳台直播",CGN中文台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8
@@ -52,7 +573,7 @@ https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CG
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://220.135.241.47:8312/0.ts
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBS%20Asia.png" group-title="🔮港澳台直播",TVBS Asia
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBS%E6%96%B0%E9%97%BB.png" group-title="🔮港澳台直播",TVBS新闻
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
