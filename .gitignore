@@ -4,3 +4,5 @@ __pycache__/
 logs/
 *.log
 .DS_Store
+hit_headers.json
+.workbuddy/
