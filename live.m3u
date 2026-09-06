@@ -245,15 +245,19 @@ http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B9%8B%E6%B1%9F%E8%AE%B0%E5%BD%95.png" group-title="💎地方台直播",之江记录
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%BA%91.png" group-title="💎地方台直播",云
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%9B%BD%E9%83%BD%E5%B8%824K.png" group-title="💎地方台直播",南国都市4K
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 #EXTVLCOPT:http-referrer=https://live.445569.xyz/
 http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%AE%81%E5%BD%B1%E8%A7%86%E5%A8%B1%E4%B9%90.png" group-title="💎地方台直播",南宁影视娱乐
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://hls.nntv.cn/nnlive/YSYL_244.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%AE%81%E6%96%87%E6%97%85.png" group-title="💎地方台直播",南宁文旅
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://hls.nntv.cn/nnlive/WLSH_24.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%90%89%E6%9E%97%E7%BA%AA%E5%BD%95%E7%89%87%E8%BD%AE%E6%92%AD.png" group-title="💎地方台直播",吉林纪录片轮播
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
 http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/da805d8d77a24db8aaa62328eb6d874e/index.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%A3%B6%E5%85%B3%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",壶关电视台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
@@ -292,9 +296,6 @@ http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%90%A7%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",萧山电视台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%8D%E5%BA%86%E6%B1%BD%E6%91%A9.png" group-title="💎地方台直播",重庆汽摩
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://120.76.248.139/live/bfgd/4200000168.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%91%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",金山电视台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://pili-live-hls.wdit.com.cn/wditlive/8818dfe5f4df45ba9a3f32964d172fb2b6d3.m3u8
@@ -304,6 +305,7 @@ http://pili-live-hls.wdit.com.cn/wditlive/8818dfe5f4df45ba9a3f32964d172fb2b6d3.m
 http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%9D%92%E7%94%B0%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",青田电视台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
 http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%BB%91%E9%BE%99%E6%B1%9F%E5%86%9C%E4%B8%9A%E7%A7%91%E6%95%99%E9%A2%91%E9%81%93.png" group-title="💎地方台直播",黑龙江农业科教频道
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
@@ -362,9 +364,6 @@ https://d2jc41c1shgcol.cloudfront.net/live/CtiNEWS1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E8%A6%96.png" group-title="🔮港澳台直播",中視
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://173.208.234.146/live/ctv.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E8%A6%96%E6%96%B0%E8%81%9E.png" group-title="🔮港澳台直播",中視新聞
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://173.208.234.146/live/ctvnews.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E4%B8%AD%E8%A6%96%E7%B6%93%E5%85%B8.png" group-title="🔮港澳台直播",中視經典
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://173.208.234.146/live/ctvjd.m3u8
