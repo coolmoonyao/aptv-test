@@ -118,9 +118,6 @@ http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbL
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Bravo%20Vault.png" group-title="全球节目",Bravo Vault
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/61a276d1-8291-4018-aba2-146304f96043/4.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CBS%202%20New%20York.png" group-title="全球节目",CBS 2 New York
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://stream.cammonitorplus.net/1810/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN1.png" group-title="全球节目",CGTN1
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://live-stream.cgtn.com/event-live/CGTN_1_1PVvR6ZBAZ2/index.m3u8
@@ -245,6 +242,12 @@ https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 #EXTVLCOPT:http-referrer=https://live.445569.xyz/
 http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%AE%81%E5%BD%B1%E8%A7%86%E5%A8%B1%E4%B9%90.png" group-title="💎地方台直播",南宁影视娱乐
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://hls.nntv.cn/nnlive/YSYL_244.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%AE%81%E6%96%87%E6%97%85.png" group-title="💎地方台直播",南宁文旅
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://hls.nntv.cn/nnlive/WLSH_24.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%90%89%E6%9E%97%E7%BA%AA%E5%BD%95%E7%89%87%E8%BD%AE%E6%92%AD.png" group-title="💎地方台直播",吉林纪录片轮播
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 #EXTVLCOPT:http-referrer=https://live.445569.xyz/
@@ -283,9 +286,15 @@ http://bp-resource-dfl.bestv.cn/152/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%9C%8B%E4%B8%9C%E6%96%B94K.png" group-title="💎地方台直播",看东方4K
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8B%8F%E5%B7%9E4K.png" group-title="💎地方台直播",苏州4K
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+https://live-auth.51kandianshi.com/szgd/csztv4k_hd.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%90%A7%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",萧山电视台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%8D%E5%BA%86%E6%B1%BD%E6%91%A9.png" group-title="💎地方台直播",重庆汽摩
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+http://120.76.248.139/live/bfgd/4200000168.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%91%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",金山电视台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://pili-live-hls.wdit.com.cn/wditlive/8818dfe5f4df45ba9a3f32964d172fb2b6d3.m3u8
@@ -318,9 +327,6 @@ https://idclive.hljtv.com:4430/live/dushi_hd.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGN%E4%B8%AD%E6%96%87%E5%8F%B0.png" group-title="🔮港澳台直播",CGN中文台
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Dali%20TV.png" group-title="🔮港澳台直播",Dali TV
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/HOY76.png" group-title="🔮港澳台直播",HOY76
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://play.wenxiang.cn/live/02267bba92f0f4b8291abefa0560664f.flv
