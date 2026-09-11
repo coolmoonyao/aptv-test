@@ -116,7 +116,7 @@ http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=FifastbLive&Contentid=300000
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000015686&livemode=1&stbId=toShengfen&mode=1&$24M-FifastbLive
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Bravo%20Vault.png" group-title="全球节目",Bravo Vault
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/61a276d1-8291-4018-aba2-146304f96043/4.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CGTN1.png" group-title="全球节目",CGTN1
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
@@ -127,9 +127,10 @@ https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/MBC%20Yeosu%20(%EC%97%AC%EC%88%98%20MBC)%5BNot%2024%2F7%5D.png" group-title="全球节目",MBC Yeosu (여수 MBC)[Not 24/7]
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/QVC.png" group-title="全球节目",QVC
+#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/USA%20Network.png" group-title="全球节目",USA Network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
-https://d1flvb4iqlercm.cloudfront.net/r-channel/live.m3u8
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
+http://190.11.225.124:5000/live/usa_hd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/CCTV10%40.png" group-title="🇨🇳央卫视直播1",CCTV10@
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://f.123.rr.kg/163189/cctv10
@@ -242,12 +243,6 @@ https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 #EXTVLCOPT:http-referrer=https://live.445569.xyz/
 http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%AE%81%E5%BD%B1%E8%A7%86%E5%A8%B1%E4%B9%90.png" group-title="💎地方台直播",南宁影视娱乐
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://hls.nntv.cn/nnlive/YSYL_244.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%8D%97%E5%AE%81%E6%96%87%E6%97%85.png" group-title="💎地方台直播",南宁文旅
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://hls.nntv.cn/nnlive/WLSH_24.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E5%90%89%E6%9E%97%E7%BA%AA%E5%BD%95%E7%89%87%E8%BD%AE%E6%92%AD.png" group-title="💎地方台直播",吉林纪录片轮播
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 #EXTVLCOPT:http-referrer=https://live.445569.xyz/
@@ -286,12 +281,6 @@ http://bp-resource-dfl.bestv.cn/152/3/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E7%9C%8B%E4%B8%9C%E6%96%B94K.png" group-title="💎地方台直播",看东方4K
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%8B%8F%E5%B7%9E4K.png" group-title="💎地方台直播",苏州4K
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-https://live-auth.51kandianshi.com/szgd/csztv4k_hd.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E8%90%A7%E5%B1%B1%E7%94%B5%E8%A7%86%E5%8F%B0.png" group-title="💎地方台直播",萧山电视台
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E9%87%8D%E5%BA%86%E6%B1%BD%E6%91%A9.png" group-title="💎地方台直播",重庆汽摩
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://120.76.248.139/live/bfgd/4200000168.m3u8
@@ -342,12 +331,6 @@ http://3niao.lielangys.top/play/1568275619470108006.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/LIVE%E4%B8%89%E7%AB%8B.png" group-title="🔮港澳台直播",LIVE三立
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 https://d2jc41c1shgcol.cloudfront.net/live/setnewsrtmp/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Now%E7%88%86%E8%B0%B7%E6%98%9F%E5%BD%B1%E8%87%BA.png" group-title="🔮港澳台直播",Now爆谷星影臺
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://173.208.234.146/live/nowxy.m3u8
-#EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/Now%E7%88%86%E8%B0%B7%E8%87%BA.png" group-title="🔮港澳台直播",Now爆谷臺
-#EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
-http://173.208.234.146/live/nowbg.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/TVBPlus.png" group-title="🔮港澳台直播",TVBPlus
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
 http://play.wenxiang.cn/live/5ec77f27f37babab48d60b879fde862a.flv
@@ -404,6 +387,7 @@ http://173.208.234.146/live/ftvtw.m3u8
 https://d2jc41c1shgcol.cloudfront.net/live/ftvnewsqt/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B8%AF%E5%8F%B0%E7%94%B5%E8%A7%8631.png" group-title="🔮港澳台直播",港台电视31
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
+#EXTVLCOPT:http-referrer=https://live.445569.xyz/
 http://play.wenxiang.cn/live/0f4b100c9ed81fdd547ba0a1a20dea49.flv
 #EXTINF:-1 tvg-logo="https://epg.112114.xyz/logo/%E6%B8%AF%E5%8F%B0%E7%94%B5%E8%A7%8632.png" group-title="🔮港澳台直播",港台电视32
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.5.0.0
